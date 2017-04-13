@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Energy_Cons_DW_BI
+﻿namespace Energy_Cons_DW_BI
 {
     class Shop_Dim
     {
@@ -17,22 +11,10 @@ namespace Energy_Cons_DW_BI
             this.shop_location = shop_location;
         }
 
-        public string SHOP_CODE
-        {
-            get { return shop_code; } 
-            set { shop_code = value; }
-        }
+        public string SHOP_CODE{get { return shop_code; } set { shop_code = value; }}
 
-        public string SHOP_NAME
-        {
-            get { return shop_name; }
-            set { shop_name = value; }
-        }
+        public string SHOP_NAME{get { return shop_name; }set { shop_name = value; }}
 
-        public string SHOP_LOCATION
-        {
-            get { return shop_location; }
-            set { shop_location = value; }
-        }
+        public string SHOP_LOCATION{get { return shop_location; }set { shop_location = value; }}
     }
 }

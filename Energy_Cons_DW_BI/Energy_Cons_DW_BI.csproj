@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Consumption_Fact.cs" />
     <Compile Include="Cons_Type_Dim.cs" />
+    <Compile Include="DatabaseHandler.cs" />
     <Compile Include="Date_Dim.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
