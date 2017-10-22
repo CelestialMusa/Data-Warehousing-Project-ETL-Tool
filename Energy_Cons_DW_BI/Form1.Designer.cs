@@ -1,6 +1,6 @@
 ﻿namespace Energy_Cons_DW_BI
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -36,32 +36,42 @@
             this.storeDataCVSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.storesCVSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readFromListsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.databaseToolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dropAllTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.truncateTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.developersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.truncateTablesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.databaseToolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createAllObjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.createDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createTablesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.createDataInsertingStoredProcedureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dropAllTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dropAllObjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.dropTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.truncateTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.truncateTablesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.developersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(13, 40);
+            this.listBox1.Location = new System.Drawing.Point(15, 27);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(562, 225);
+            this.listBox1.Size = new System.Drawing.Size(685, 225);
             this.listBox1.TabIndex = 2;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(581, 40);
+            this.richTextBox1.Location = new System.Drawing.Point(706, 27);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(548, 225);
+            this.richTextBox1.Size = new System.Drawing.Size(459, 225);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
@@ -73,7 +83,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1151, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1174, 24);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -118,6 +128,18 @@
             this.readFromListsToolStripMenuItem.Text = "&Read From Lists";
             this.readFromListsToolStripMenuItem.Click += new System.EventHandler(this.readFromListsToolStripMenuItem_Click_1);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(154, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // databaseToolsToolStripMenuItem
             // 
             this.databaseToolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -132,27 +154,91 @@
             // 
             // createTablesToolStripMenuItem
             // 
+            this.createTablesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.createAllObjectsToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.createDatabaseToolStripMenuItem,
+            this.createTablesToolStripMenuItem1,
+            this.createDataInsertingStoredProcedureToolStripMenuItem});
             this.createTablesToolStripMenuItem.Name = "createTablesToolStripMenuItem";
-            this.createTablesToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.createTablesToolStripMenuItem.Text = "Create Tables";
+            this.createTablesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.createTablesToolStripMenuItem.Text = "Create Statements";
+            // 
+            // createAllObjectsToolStripMenuItem
+            // 
+            this.createAllObjectsToolStripMenuItem.Name = "createAllObjectsToolStripMenuItem";
+            this.createAllObjectsToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.createAllObjectsToolStripMenuItem.Text = "Create All Objects";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(275, 6);
+            // 
+            // createDatabaseToolStripMenuItem
+            // 
+            this.createDatabaseToolStripMenuItem.Name = "createDatabaseToolStripMenuItem";
+            this.createDatabaseToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.createDatabaseToolStripMenuItem.Text = "Create Database";
+            // 
+            // createTablesToolStripMenuItem1
+            // 
+            this.createTablesToolStripMenuItem1.Name = "createTablesToolStripMenuItem1";
+            this.createTablesToolStripMenuItem1.Size = new System.Drawing.Size(278, 22);
+            this.createTablesToolStripMenuItem1.Text = "Create Tables";
+            this.createTablesToolStripMenuItem1.Click += new System.EventHandler(this.createTablesToolStripMenuItem1_Click);
+            // 
+            // createDataInsertingStoredProcedureToolStripMenuItem
+            // 
+            this.createDataInsertingStoredProcedureToolStripMenuItem.Name = "createDataInsertingStoredProcedureToolStripMenuItem";
+            this.createDataInsertingStoredProcedureToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.createDataInsertingStoredProcedureToolStripMenuItem.Text = "Create Data Inserting Stored Procedure";
             // 
             // dropAllTablesToolStripMenuItem
             // 
+            this.dropAllTablesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dropAllObjectsToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.dropTablesToolStripMenuItem});
             this.dropAllTablesToolStripMenuItem.Name = "dropAllTablesToolStripMenuItem";
-            this.dropAllTablesToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.dropAllTablesToolStripMenuItem.Text = "Drop Tables";
+            this.dropAllTablesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.dropAllTablesToolStripMenuItem.Text = "Drop Statements";
+            // 
+            // dropAllObjectsToolStripMenuItem
+            // 
+            this.dropAllObjectsToolStripMenuItem.Name = "dropAllObjectsToolStripMenuItem";
+            this.dropAllObjectsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.dropAllObjectsToolStripMenuItem.Text = "Drop All Objects";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(157, 6);
+            // 
+            // dropTablesToolStripMenuItem
+            // 
+            this.dropTablesToolStripMenuItem.Name = "dropTablesToolStripMenuItem";
+            this.dropTablesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.dropTablesToolStripMenuItem.Text = "Drop Tables";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(153, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(167, 6);
             // 
             // truncateTablesToolStripMenuItem
             // 
             this.truncateTablesToolStripMenuItem.Name = "truncateTablesToolStripMenuItem";
-            this.truncateTablesToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.truncateTablesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.truncateTablesToolStripMenuItem.Text = "Insert Records";
-            this.truncateTablesToolStripMenuItem.Click += new System.EventHandler(this.truncateTablesToolStripMenuItem_Click);
+            this.truncateTablesToolStripMenuItem.Click += new System.EventHandler(this.insertRecordsToolStripMenuItem_Click);
+            // 
+            // truncateTablesToolStripMenuItem1
+            // 
+            this.truncateTablesToolStripMenuItem1.Name = "truncateTablesToolStripMenuItem1";
+            this.truncateTablesToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
+            this.truncateTablesToolStripMenuItem1.Text = "Truncate Tables";
+            this.truncateTablesToolStripMenuItem1.Click += new System.EventHandler(this.truncateTablesToolStripMenuItem1_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -165,38 +251,41 @@
             // developersToolStripMenuItem
             // 
             this.developersToolStripMenuItem.Name = "developersToolStripMenuItem";
-            this.developersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.developersToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.developersToolStripMenuItem.Text = "Developers";
             // 
-            // truncateTablesToolStripMenuItem1
+            // label1
             // 
-            this.truncateTablesToolStripMenuItem1.Name = "truncateTablesToolStripMenuItem1";
-            this.truncateTablesToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
-            this.truncateTablesToolStripMenuItem1.Text = "Truncate Tables";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 270);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 7;
             // 
-            // toolStripSeparator2
+            // button1
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(154, 6);
+            this.button1.Location = new System.Drawing.Point(1090, 306);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 458);
+            this.ClientSize = new System.Drawing.Size(1174, 332);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximumSize = new System.Drawing.Size(1190, 368);
+            this.Name = "MainForm";
+            this.Text = "Data Warehouses ETL Tool";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -223,6 +312,16 @@
         private System.Windows.Forms.ToolStripMenuItem truncateTablesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem createAllObjectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem createDatabaseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createTablesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem createDataInsertingStoredProcedureToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dropAllObjectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem dropTablesToolStripMenuItem;
     }
 }
 

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -47,6 +43,29 @@ namespace Energy_Cons_DW_BI
                     int status = cmd.ExecuteNonQuery();
 
                     if (status == 0)
+                    {
+                        Console.WriteLine("Success");
+                    }
+                }
+            }
+        }
+
+        public void createtables()
+        {
+
+        }
+
+        public void dropTables()
+        {
+            using (connection = new SqlConnection(conStr))
+            {
+                using (SqlCommand cmd = new SqlCommand("truncateTables",connection))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    connection.Open();
+
+                    if(cmd.ExecuteNonQuery() == 0)
                     {
                         Console.WriteLine("Success");
                     }
